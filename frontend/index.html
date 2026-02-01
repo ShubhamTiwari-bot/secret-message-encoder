@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secret Message Encoder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="card">
+    <h1>🔐 Secret Encoder</h1>
+    <p class="subtitle">Encode & Decode Messages Securely</p>
+
+    <div class="form-group">
+        <label>Encoding Type</label>
+        <select id="encodingType">
+            <option value="mix">Mix Encoding</option>
+            <option value="binary">Binary Encoding</option>
+            <option value="understandable">understandable language</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Your Message</label>
+        <textarea id="inputMessage" placeholder="Type your secret message..."></textarea>
+    </div>
+
+    <div class="button-group">
+        <button class="primary" onclick="process('encode')">Encode</button>
+        <button class="secondary" onclick="process('decode')">Decode</button>
+    </div>
+
+    <div class="form-group">
+        <label>Result</label>
+        <textarea id="outputMessage" readonly></textarea>
+        <button class="copy-btn" onclick="copyResult()">Copy</button>
+    </div>
+
+    <div id="status"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
