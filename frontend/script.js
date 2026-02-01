@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://secret-message-encoder.onrender.com";
 
 async function process(action) {
     const message = document.getElementById("inputMessage").value;
