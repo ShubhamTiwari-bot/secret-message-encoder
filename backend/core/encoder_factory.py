@@ -1,6 +1,7 @@
 from services.mix_encoder import MixEncoder
 from services.binary_encoder import BinaryEncoder
 from services.understandable_encoder import UnderstandableEncoder
+from services.emoji_encoder import EmojiEncoder
 
 class EncoderFactory:
 
@@ -8,6 +9,7 @@ class EncoderFactory:
         "mix": MixEncoder(),
         "binary": BinaryEncoder(),
         "understandable": UnderstandableEncoder(),
+        "emoji": EmojiEncoder(),
     }
 
     @staticmethod
